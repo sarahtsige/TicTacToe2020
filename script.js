@@ -14,7 +14,8 @@ function changeColor(e) {
         if (turn%2) {
             e.target.style.backgroundColor = "red";
             e.target.removeEventListener('click', changeColor);
-        }    
+        }   
+        checkWinner();
 }
 
 
@@ -35,10 +36,25 @@ let winningArray = [
     [0, 4, 8],
     [2, 4, 6]
     ];
+ 
     
 
-    // function checkWinner() {
-    //     if (
 
-    //     )
-    //     }
+
+
+
+    function checkWinner() {
+        if (
+            squares[0].style.backgroundColor == squares[1].style.backgroundColor &&  squares[0].style.backgroundColor ==  squares[2].style.backgroundColor
+        ) console.log (`${squares[0].style.backgroundColor} wins!`)
+        else if (
+            squares[3].style.backgroundColor == "red" &&
+            squares[4].style.backgroundColor == "red" &&
+            squares[5].style.backgroundColor == "red"
+        ) console.log ('Red wins!')
+        else if (
+            squares[6].style.backgroundColor == "red" &&
+            squares[7].style.backgroundColor == "red" &&
+            squares[8].style.backgroundColor == "red"
+        ) console.log ('Red wins!')
+    }    
