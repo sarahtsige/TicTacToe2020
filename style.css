@@ -24,6 +24,12 @@ body {
 
 }
 
+button {
+    background-color: lightskyblue;
+    padding: 7px;
+    border-radius: 5px;
+}
+
 
 .squares {
  border: 1px;
